@@ -1,11 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
-const container = document.getElementById("reactapp");
+import { Home } from "./components/pages/Home/Home";
+
+const container = document.getElementById("reactapp_js");
 const root = createRoot(container)
 root.render(
-    <App />
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
     );
 
 function App() {
-    return <h1> I am App func / component </h1>;
+    return (
+        <Routes>
+
+            <Route path="/" element={<Home  />} />
+        </Routes>
+);
 }
