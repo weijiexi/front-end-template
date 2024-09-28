@@ -13,9 +13,11 @@ root.render(
 
 function App() {
     return (
-        <Routes>
-
-            <Route path="/" element={<Home  />} />
-        </Routes>
+        <div>            
+            <Routes>
+    
+                <Route path="/" element={<Home  />} />
+            </Routes>
+        </div>
 );
 }
