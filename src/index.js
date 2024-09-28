@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
-import { Home } from "./components/pages/Home/Home";
+import { HomePage } from "./components/pages/Home";
 
 const container = document.getElementById("reactapp_js");
 const root = createRoot(container)
@@ -16,7 +16,7 @@ function App() {
         <div>            
             <Routes>
     
-                <Route path="/" element={<Home  />} />
+                <Route path="/" element={<HomePage  />} />
             </Routes>
         </div>
 );
